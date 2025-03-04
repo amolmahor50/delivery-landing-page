@@ -1,3 +1,5 @@
+import { version } from "../../package.json";
+
 const footerData = [
     {
         title: "About Us",
@@ -70,6 +72,10 @@ export default function Footer() {
                     </div>
                 ))}
             </div>
+
+            <p className="text-center subHeading sm:mt-20 mt-10">
+                Copyright © {new Date().getFullYear()} amol.mahor. All rights reserved. Version : {version}
+            </p>
         </div>
     );
 }
